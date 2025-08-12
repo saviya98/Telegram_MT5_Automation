@@ -1,3 +1,9 @@
 2025-08-12 20:06:16,364 | INFO | Listening for GOLD signals…
 2025-08-12 20:06:16,364 | INFO | Connecting to 91.108.56.181:443/TcpFull...
 2025-08-12 20:06:16,571 | INFO | Connection to 91.108.56.181:443/TcpFull complete!
+2025-08-12 20:36:18,430 | INFO | Got difference for account updates
+2025-08-12 20:36:18,982 | INFO | Got difference for channel 1072723547 updates
+2025-08-12 20:38:19,075 | INFO | Got difference for channel 1260068108 updates
+2025-08-12 20:45:29,593 | INFO | Disconnecting from 91.108.56.181:443/TcpFull...
+2025-08-12 20:45:29,593 | INFO | Disconnection from 91.108.56.181:443/TcpFull complete!
+2025-08-12 20:45:29,593 | INFO | Not disconnecting (already have no connection)

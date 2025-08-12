@@ -1,1 +1,3 @@
 .env
+logs/bridge.log
+tg_mt5_gold_session.session
