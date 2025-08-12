@@ -1,0 +1,28 @@
+telegram:
+  session_name: tg_mt5_gold_session
+
+symbol_map:
+  GOLD:
+    candidates:
+      ["XAUUSD", "XAUUSD.i", "XAUUSD.m", "XAUUSD.x", "GOLD", "GOLDmicro"]
+
+risk:
+  risk_per_trade: 0.01 # 1% per signal (across orders)
+  max_orders: 4 # one per TP
+  slippage_points: 30
+  be_buffer_points: 10
+  kill_switch_dd_pct: 0 # 0 disables; e.g., 5 = stop if equity <= balance -5%
+
+parsing:
+  require_symbol_hint: "GOLD"
+  zone_same_line_regex: "(?i)\\b(buy|sell)\\b.*?\\bzone\\b.*?([0-9.,]+)\\s*[-–—]\\s*([0-9.,]+)"
+  zone_next_line_regex: "(?m)^\\s*([0-9.,]+)\\s*[-–—]\\s*([0-9.,]+)\\s*$"
+  tp_regex: "(?i)TP\\s*\\d+\\s*[-:]\\s*([0-9.,]+)"
+  sl_regex: "(?i)\\bSL\\b\\s*[-:]\\s*([0-9.,]+)"
+  side_regex: "(?i)\\b(buy|sell)\\b"
+  martingale_regex: "(?i)\\bmartingale\\b"
+
+guards:
+  # Set in .env or add here; both supported:
+
+  allowlist_chat_ids: []
